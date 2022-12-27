@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <title>Calculate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/modals.js" defer></script>
+  </head>
+  <body>
+    <header class="flex flex-space gap-100 bg-primary padding-100">
+      <h1 class="fs-primary-heading fw-extra-bold">Calculate</h1>
+      <button class="button fs-label fw-semi-bold" id="about-button">
+        About
+      </button>
+    </header>
+    <main class="bg-gradient flex flex-center gap-100">
+      <div class="calc grid gap-50">
+        <div class="output grid-col-span-full">
+          <div class="previous fs-description fw-light">0123456789</div>
+          <div class="current fs-secondary-heading fw-extra-bold">0123456</div>
+        </div>
+        <button
+          class="calc-button fs-label fw-semi-bold grid-col-span-2"
+          data-clear
+        >
+          AC
+        </button>
+        <button
+          class="calc-button fs-label fw-semi-bold grid-col-span-2"
+          data-clear
+        >
+          C
+        </button>
+        <button class="calc-button fs-label fw-semi-bold" data-number>7</button>
+        <button class="calc-button fs-label fw-semi-bold" data-number>8</button>
+        <button class="calc-button fs-label fw-semi-bold" data-number>9</button>
+        <button class="calc-button fs-label fw-semi-bold" data-operation>
+          /
+        </button>
+        <button class="calc-button fs-label fw-semi-bold" data-number>4</button>
+        <button class="calc-button fs-label fw-semi-bold" data-number>5</button>
+        <button class="calc-button fs-label fw-semi-bold" data-number>6</button>
+        <button class="calc-button fs-label fw-semi-bold" data-operation>
+          *
+        </button>
+        <button class="calc-button fs-label fw-semi-bold" data-number>1</button>
+        <button class="calc-button fs-label fw-semi-bold" data-number>2</button>
+        <button class="calc-button fs-label fw-semi-bold" data-number>3</button>
+        <button class="calc-button fs-label fw-semi-bold" data-operation>
+          -
+        </button>
+        <button class="calc-button fs-label fw-semi-bold" data-number>0</button>
+        <button class="calc-button fs-label fw-semi-bold" data-number>.</button>
+        <button class="calc-button fs-label fw-semi-bold" data-operation>
+          =
+        </button>
+        <button class="calc-button fs-label fw-semi-bold" data-operation>
+          +
+        </button>
+      </div>
+    </main>
+    <footer
+      class="flex flex-center gap-100 bg-secondary fw-extra-light padding-100"
+    >
+      <p>Coded by Luin</p>
+      <a href="https://github.com/luinrandir" target="_blank">
+        <img src="img/GitHub-Mark-Light-32px.png" alt="github" />
+      </a>
+    </footer>
+    <dialog class="modal bg-modal" id="about-modal">
+      <div class="flex flex-center flex-column padding-100 gap-100">
+        <h3 class="fs-label fw-semi-bold">Calculate</h3>
+        <p>
+          Calculators have been around for hundreds of years. It was not until
+          the late 1960s where we were introduced to electronic calculators.
+          Towards the end of the 1970s the Calculator became affordable enough
+          to be common in schools. Today we find Calculators in smartphones,
+          tablets, and even smart watches.
+        </p>
+        <p>
+          To find out more information about the Calculator and its history
+          <a
+            href="https://en.wikipedia.org/wiki/Calculator"
+            class="modal-link"
+            target="_blank"
+            >click here</a
+          >.
+        </p>
+        <p>
+          This application was created as a project following
+          <abbr title="The Odin Project">TOP</abbr>.
+        </p>
+        <button class="button fs-label fw-semi-bold" id="close-about">
+          Close
+        </button>
+      </div>
+    </dialog>
+  </body>
+</html>
