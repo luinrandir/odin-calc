@@ -79,7 +79,7 @@ svg {
 
 /* pseudo elements */
 ::backdrop {
-  --iro-backdrop: hsl(293, 61%, 15%);
+  --iro-backdrop: hsl(359, 61%, 15%);
 }
 
 /* utility classes */
@@ -145,6 +145,9 @@ svg {
 .flex-column {
   flex-direction: column;
 }
+.gap-50 {
+  gap: 0.5rem;
+}
 .gap-100 {
   gap: 1rem;
 }
@@ -152,6 +155,14 @@ svg {
 /* grid utility */
 .grid {
   display: grid;
+}
+
+.grid-col-span-2 {
+  grid-column: span 2;
+}
+
+.grid-col-span-full {
+  grid-column: 1/-1;
 }
 
 /* general styling */
@@ -169,7 +180,42 @@ main {
 }
 
 /* application styling */
-
+.calc {
+  --iro-calc: hsl(0, 0%, 47%);
+  --iro-screen: hsl(0, 0%, 3%);
+  background-color: var(--iro-calc);
+  padding: 2rem;
+  border-radius: 10px;
+  border: 2.5px solid black;
+  grid-template-columns: repeat(4, 1fr);
+}
+.output {
+  background-color: var(--iro-screen);
+  opacity: 0.8;
+  height: 100%;
+  padding: 3rem 1rem;
+}
+.calc-button {
+  text-align: center;
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.calc-button[data-type="clear"] {
+  background-color: hsl(0, 100%, 50%);
+  color: var(--fc-primary);
+}
+.calc-button[data-type="clear"]:hover {
+  background-color: hsl(0, 100%, 65%);
+}
+.calc-button[data-type="operation"] {
+  background-color: hsl(251, 100%, 50%);
+  color: var(--fc-primary);
+}
+.calc-button[data-type="operation"]:hover {
+  background-color: hsl(251, 100%, 65%);
+}
 /* button styling */
 .button {
   background-color: var(--iro-400);

@@ -4,6 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
     <title>Calculate</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +38,74 @@
         About
       </button>
     </header>
-    <main class="bg-gradient flex flex-center gap-100"></main>
+    <main class="bg-gradient flex flex-center gap-100">
+      <div class="calc grid gap-50">
+        <div class="output grid-col-span-full">
+          <div class="previous">0123456789</div>
+          <div class="current">0123456</div>
+        </div>
+        <button
+          class="calc-button fs-label fw-semi-bold grid-col-span-2"
+          data-type="clear"
+        >
+          AC
+        </button>
+        <button
+          class="calc-button fs-label fw-semi-bold grid-col-span-2"
+          data-type="clear"
+        >
+          C
+        </button>
+        <button class="calc-button fs-label fw-semi-bold" data-type="number">
+          7
+        </button>
+        <button class="calc-button fs-label fw-semi-bold" data-type="number">
+          8
+        </button>
+        <button class="calc-button fs-label fw-semi-bold" data-type="number">
+          9
+        </button>
+        <button class="calc-button fs-label fw-semi-bold" data-type="operation">
+          /
+        </button>
+        <button class="calc-button fs-label fw-semi-bold" data-type="number">
+          4
+        </button>
+        <button class="calc-button fs-label fw-semi-bold" data-type="number">
+          5
+        </button>
+        <button class="calc-button fs-label fw-semi-bold" data-type="number">
+          6
+        </button>
+        <button class="calc-button fs-label fw-semi-bold" data-type="operation">
+          *
+        </button>
+        <button class="calc-button fs-label fw-semi-bold" data-type="number">
+          1
+        </button>
+        <button class="calc-button fs-label fw-semi-bold" data-type="number">
+          2
+        </button>
+        <button class="calc-button fs-label fw-semi-bold" data-type="number">
+          3
+        </button>
+        <button class="calc-button fs-label fw-semi-bold" data-type="operation">
+          -
+        </button>
+        <button class="calc-button fs-label fw-semi-bold" data-type="number">
+          0
+        </button>
+        <button class="calc-button fs-label fw-semi-bold" data-type="number">
+          .
+        </button>
+        <button class="calc-button fs-label fw-semi-bold" data-type="operation">
+          =
+        </button>
+        <button class="calc-button fs-label fw-semi-bold" data-type="operation">
+          +
+        </button>
+      </div>
+    </main>
     <footer
       class="flex flex-center gap-100 bg-secondary fw-extra-light padding-100"
     >
