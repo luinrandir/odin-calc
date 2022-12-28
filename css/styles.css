@@ -23,7 +23,7 @@ html:focus-within {
 html,
 body {
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 body {
@@ -183,6 +183,7 @@ main {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: minmax(120px, auto) repeat(5, 1fr);
   min-height: 50vh;
+  max-width: 22.5vw;
   align-content: center;
   justify-content: center;
   background-color: var(--iro-calc);
