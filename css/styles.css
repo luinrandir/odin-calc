@@ -181,7 +181,7 @@ main {
   --iro-calc: hsl(0, 0%, 47%);
   --iro-screen: hsl(0, 0%, 3%);
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: minmax(120px, auto);
+  grid-template-rows: minmax(120px, auto) repeat(5, 1fr);
   min-height: 50vh;
   align-content: center;
   justify-content: center;
@@ -189,6 +189,8 @@ main {
   padding: 2rem;
   border-radius: 10px;
   border: 2.5px solid black;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 .output {
   display: flex;
@@ -198,8 +200,6 @@ main {
   background-color: var(--iro-screen);
   opacity: 0.8;
   padding: 10px;
-  word-wrap: break-word;
-  word-break: break-all;
 }
 
 .calc-button {
