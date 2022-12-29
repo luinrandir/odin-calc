@@ -30,6 +30,7 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/modals.js" defer></script>
+    <script src="js/calc.js" defer></script>
   </head>
   <body>
     <header class="flex flex-space gap-100 bg-primary padding-100">
@@ -41,8 +42,10 @@
     <main class="bg-gradient flex flex-center gap-100">
       <div class="calc grid gap-50">
         <div class="output grid-col-span-full">
-          <div class="previous fs-description fw-light">0123456789</div>
-          <div class="current fs-secondary-heading fw-extra-bold">0123456</div>
+          <div class="fs-description fw-light" id="previous">0123456789</div>
+          <div class="fs-secondary-heading fw-extra-bold" id="current">
+            0123456
+          </div>
         </div>
         <button
           class="calc-button fs-label fw-semi-bold grid-col-span-2"
@@ -60,7 +63,7 @@
         <button class="calc-button fs-label fw-semi-bold" data-number>8</button>
         <button class="calc-button fs-label fw-semi-bold" data-number>9</button>
         <button class="calc-button fs-label fw-semi-bold" data-operation>
-          /
+          ÷
         </button>
         <button class="calc-button fs-label fw-semi-bold" data-number>4</button>
         <button class="calc-button fs-label fw-semi-bold" data-number>5</button>
